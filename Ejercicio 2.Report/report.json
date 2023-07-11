@@ -1,0 +1,138 @@
+{
+  "config": "{\"version\":\"5.37\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY22SU03\",\"version\":\"5.31\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY22SU03",
+            "path": "BaseThemes/CY22SU03.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Dinero4584510789991958.png",
+            "path": "Dinero4584510789991958.png",
+            "type": 100
+          },
+          {
+            "name": "Femenino36771347879380323.jpg",
+            "path": "Femenino36771347879380323.jpg",
+            "type": 100
+          },
+          {
+            "name": "Masculino3292001038123782.jpg",
+            "path": "Masculino3292001038123782.jpg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0b047950108d10053ca7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":302.3622047244094,\"y\":78.9501312335958,\"z\":1000,\"width\":280.5249343832021,\"height\":282.20472440944883}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(ENFERMERIA.VALOR CONSULTA)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"ENFERMERIA\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"VALOR CONSULTA\"}},\"Function\":1},\"Name\":\"Sum(ENFERMERIA.VALOR CONSULTA)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"VALOR CONSULTA\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 282.20,
+          "width": 280.52,
+          "x": 302.36,
+          "y": 78.95,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"24eb878e03871cb523b1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":53.75328083989501,\"y\":78.9501312335958,\"z\":0,\"width\":280.5249343832021,\"height\":203.25459317585302}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(ENFERMERIA.PACIENTE)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"ENFERMERIA\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"PACIENTE\"}},\"Function\":5},\"Name\":\"Min(ENFERMERIA.PACIENTE)\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"PACIENTE\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Número de pacientes'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 203.25,
+          "width": 280.52,
+          "x": 53.75,
+          "y": 78.95,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"917b99c16076727dee50\",\"layouts\":[{\"id\":0,\"position\":{\"x\":53.75328083989501,\"y\":502.257217847769,\"z\":4000,\"width\":198.21522309711284,\"height\":161.25984251968504}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Femenino36771347879380323.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 161.26,
+          "width": 198.22,
+          "x": 53.75,
+          "y": 502.26,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"95f59620a8583b0ba025\",\"layouts\":[{\"id\":0,\"position\":{\"x\":419.9475065616798,\"y\":369.5538057742782,\"z\":6000,\"width\":824.776902887139,\"height\":114.2257217847769}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"ENFERMERIA.MEDICO\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"ENFERMERIA\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"MEDICO\"},\"Name\":\"ENFERMERIA.MEDICO\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"ENFERMERIA\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"MEDICO\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'ENRIQUE'\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 114.23,
+          "width": 824.78,
+          "x": 419.95,
+          "y": 369.55,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"9908dbb9e75b5262bdc0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":53.75328083989501,\"y\":369.5538057742782,\"z\":3000,\"width\":347.7165354330709,\"height\":114.2257217847769}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"ENFERMERIA.SEXO\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"ENFERMERIA\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"SEXO\"},\"Name\":\"ENFERMERIA.SEXO\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 114.23,
+          "width": 347.72,
+          "x": 53.75,
+          "y": 369.55,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"9d7ee0f959c847d02921\",\"layouts\":[{\"id\":0,\"position\":{\"x\":594.6456692913385,\"y\":137.74278215223097,\"z\":2000,\"width\":161.25984251968504,\"height\":162.93963254593174}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Dinero4584510789991958.png\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 162.94,
+          "width": 161.26,
+          "x": 594.65,
+          "y": 137.74,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"d320fd9ab0d96d27a12a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":251.96850393700785,\"y\":502.257217847769,\"z\":5000,\"width\":149.501312335958,\"height\":149.501312335958}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Masculino3292001038123782.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 149.50,
+          "width": 149.50,
+          "x": 251.97,
+          "y": 502.26,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"eba37eb5838a55958b2e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":756,\"y\":138,\"width\":489,\"height\":163,\"z\":8000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"ENFERMERIA.DIAGNOSTICO\",\"active\":true},{\"queryRef\":\"ENFERMERIA.MEDICO\",\"active\":true}],\"Columns\":[{\"queryRef\":\"ENFERMERIA.SINTOMAS\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"ENFERMERIA\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"DIAGNOSTICO\"},\"Name\":\"ENFERMERIA.DIAGNOSTICO\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"SINTOMAS\"},\"Name\":\"ENFERMERIA.SINTOMAS\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"MEDICO\"},\"Name\":\"ENFERMERIA.MEDICO\"}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"ENFERMERIA.DIAGNOSTICO\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"ENFERMERIA\"}},\"Property\":\"DIAGNOSTICO\"}}],\"isPinned\":true},{\"queryRefs\":[\"ENFERMERIA.MEDICO\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null,\"children\":[{\"identityValues\":[{\"Literal\":{\"Value\":\"'COLESTEROL ALTO'\"}}],\"isToggled\":true},{\"identityValues\":[{\"Literal\":{\"Value\":\"'PARASITOS'\"}}],\"isToggled\":true}]}}],\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 163.00,
+          "width": 489.00,
+          "x": 756.00,
+          "y": 138.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"f6fcd237650d500824c9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":419.9475065616798,\"y\":502.257217847769,\"z\":7000,\"width\":824.776902887139,\"height\":204.93438320209972}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(ENFERMERIA.EDAD)\"}],\"Category\":[{\"queryRef\":\"ENFERMERIA.SEXO\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"ENFERMERIA\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EDAD\"}},\"Function\":1},\"Name\":\"Sum(ENFERMERIA.EDAD)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"SEXO\"},\"Name\":\"ENFERMERIA.SEXO\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EDAD\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Both'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 204.93,
+          "width": 824.78,
+          "x": 419.95,
+          "y": 502.26,
+          "z": 7000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
